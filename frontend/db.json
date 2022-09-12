@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "bien",
+      "password": "123"
+    },
+    {
+      "username": "b",
+      "password": "321",
+      "id": 2
+    },
+    {
+      "username": "",
+      "password": "",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "Samsung A50",
+      "price": "300",
+      "image": "img/product-1.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung A100",
+      "price": "500",
+      "image": "img/product-2.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung A51",
+      "price": "400",
+      "image": "img/product-3.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung Galaxy Note 9",
+      "price": "1000",
+      "image": "img/product-4.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung Galaxy Note 8",
+      "price": "700",
+      "image": "img/product-5.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung Galaxy Note 10",
+      "price": "1500",
+      "image": "img/product-6.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung A30",
+      "price": "200",
+      "image": "img/product-7.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung A70",
+      "price": "600",
+      "image": "img/product-8.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung",
+      "price": "500",
+      "image": "img/product-1.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Samsung Note 11",
+      "price": "1200",
+      "image": "img/product-2.png",
+      "company": "Samsung"
+    },
+    {
+      "name": "Iphone 8",
+      "price": "500",
+      "image": "img/product-3.png",
+      "company": "Google"
+    },
+    {
+      "name": "Iphone X",
+      "price": "1500",
+      "image": "img/product-4.png",
+      "company": "Google"
+    },
+    {
+      "name": "Iphone X Plus",
+      "price": "1600",
+      "image": "img/product-5.png",
+      "company": "Google"
+    },
+    {
+      "name": "Iphone 7",
+      "price": "300",
+      "image": "img/product-6.png",
+      "company": "Google"
+    },
+    {
+      "name": "Iphone 12",
+      "price": "2000",
+      "image": "img/product-7.png",
+      "company": "Google"
+    }
+  ],
+  "addToCart": [],
+  "bill": [
+    {
+      "items": [
+        {
+          "product": {
+            "name": "A50",
+            "price": "300",
+            "image": "https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg"
+          },
+          "quantity": 1,
+          "total": "300",
+          "id": 2
+        },
+        {
+          "product": {
+            "id": 2,
+            "name": "A100",
+            "price": "500",
+            "image": "https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg"
+          },
+          "quantity": 1,
+          "total": "500",
+          "id": 3
+        }
+      ],
+      "id": 1
+    },
+    {
+      "items": [
+        {
+          "product": {
+            "id": 3,
+            "name": "A100",
+            "price": "500",
+            "image": "https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg"
+          },
+          "quantity": 1,
+          "total": "500",
+          "id": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "product": {
+            "id": 3,
+            "name": "A100",
+            "price": "500",
+            "image": "https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg"
+          },
+          "quantity": 1,
+          "total": "500",
+          "id": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "items": [
+        {
+          "product": {
+            "id": 3,
+            "name": "A100",
+            "price": "500",
+            "image": "https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg"
+          },
+          "quantity": 1,
+          "total": "500",
+          "id": 1
+        },
+        {
+          "product": {
+            "id": 2,
+            "name": "A100",
+            "price": "500",
+            "image": "https://fptshop.com.vn/Uploads/Originals/2021/10/1/637686973775896947_ip-12-dd.jpg"
+          },
+          "quantity": 1,
+          "total": "500",
+          "id": 2
+        }
+      ],
+      "id": 4
+    }
+  ]
+}
