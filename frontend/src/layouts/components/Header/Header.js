@@ -1,5 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import classNames from 'classnames/bind';
+// import 'react-tippy/dist/tippy.css'
+// import { Tooltip } from 'react-tippy';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/themes/light.css';
+
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import config from '~/config';
@@ -10,14 +16,31 @@ const cx = classNames.bind(styles);
 
 function Header() {
     const user = JSON.parse(localStorage.getItem('user'));
+    const navigate = useNavigate();
 
-    // localStorage.removeItem('user');
-
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        navigate(config.routes.login);
+    }
+    const MenuInfo = () => {
+        return(
+            <div className={cx('user-dropdown')}>
+                <div>My Account</div>
+                <div onClick={handleLogout}>Log out</div>
+            </div>
+        )
+    }
     return (
         <header className={cx('wrapper')}>
             <div className={cx('navbar')}>
                 {user ? (
-                    <div className={cx('idetity-user')}>{user.username}</div>
+                    <Tippy 
+                        content={<MenuInfo />}
+                        interactive={true}
+                        theme='light'
+                    >
+                        <button className={cx('user-name')}>{user.username}</button>
+                    </Tippy>
                 ) : (
                     <div className={cx('navbar-links')}>
                         <Link to={config.routes.register} className={cx('navbar-link')}>

@@ -28,10 +28,19 @@
     border-right: 1px solid rgb(189, 188, 188);
     height: 1.4rem;
 }
-.idetity-user {
+.user-name {
     padding: 0px 8px;
+    background-color: var(--primary);
     color: white;
     font-size: 1.4rem;
+}
+.user-dropdown div {
+    padding: 2px 6px;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover {
+        opacity: 0.7;
+    }
 }
 .inner {
     width: 100%;

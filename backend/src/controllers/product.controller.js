@@ -94,3 +94,26 @@ exports.delete = (req, res) => {
     });
   });
 }
+
+exports.search = (req, res) => {
+  const name = req.body.query;
+  Product.find({"name": { $regex: '.*' + name + '.*' }})
+      .then((data) => {
+        if (!data) {
+          return res.status(404).send({
+            message: "Product not found" ,
+          });
+        }
+        res.send(data);
+      })
+      .catch((err) => {
+        if (err.kind === "ObjectId") {
+          return res.status(404).send({
+            message: "Product not found",
+          });
+        }
+        return res.status(500).send({
+          message: "Error retrieving product ",
+        });
+      });
+}
